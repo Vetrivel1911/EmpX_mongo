@@ -1,0 +1,215 @@
+/* styles/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container h2,
+.container h1,
+.container p {
+    margin-top: 10px;   
+    text-align: center;
+}
+
+.box {
+    margin: 0 auto;
+    max-width: 400px;
+    border-bottom: 20px solid  #4CAF50;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .box h2 {
+    text-align: center;
+    color: #fff;
+    background: #4CAF50;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .box ul {
+    position: relative;
+    background: #fff;
+    padding-inline-start: 20px;
+  }
+  .box a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .box small {
+    float: right;
+    font-size: 0.7rem;
+    margin: 5px;
+  }
+
+  .box ul:hover li {
+    opacity: 0.2;
+  }
+  .box ul li {
+    list-style: none;
+    padding: 10px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+  }
+  .box ul li:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    background: #069a04;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 1;
+  }
+  .box ul li span{
+    font-size: 12px;
+  }
+  /* .box ul li span {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #4CAF50;
+    color: black;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+  }
+  .box ul li:hover span {
+    background: #fff;
+    color: #069a04;
+  } */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.add-link {
+    text-align: center;
+    text-decoration: none;
+    color: #4CAF50;
+}
+.add-link:hover{
+    text-decoration: underline;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+table{
+  margin: auto;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* General button styling */
+.box ul li button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* View button */
+.box ul li button:first-of-type {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.box ul li button:first-of-type:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Edit button */
+.box ul li button:nth-of-type(2) {
+  background-color: #FFA500; /* Orange */
+  color: white;
+}
+
+.box ul li button:nth-of-type(2):hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+/* Delete button */
+.box ul li button:last-of-type {
+  background-color: #FF6347; /* Red */
+  color: white;
+}
+
+.box ul li button:last-of-type:hover {
+  background-color: #FF4500;
+  transform: scale(1.05);
+}
+
+/* Button hover effect for all */
+.box ul li button:active {
+  transform: scale(0.95);
+}
+
+/* Ensuring alignment */
+.box ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

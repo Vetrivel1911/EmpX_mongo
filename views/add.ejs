@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %> 
+
+    <h1>Add Employee</h1>
+    <% if(locals.employee) { %>
+        <form action="/edit" method="post">
+            <input type="hidden" name="id" value="<%= employee.id %>">
+            <input type="text" name="empId" placeholder="Enter employee id" value="<%= employee.empId %>" required>
+            <input type="text" name="name" placeholder="Enter employee name" value="<%= employee.name %>" required>
+            <input type="text" name="position" placeholder="Enter employee position" value="<%= employee.position %>" required>
+            <input type="number" name="salary" placeholder="Enter employee salary" value="<%= employee.salary %>"required></input>
+            <button type="submit">Submit</button>
+        </form>
+    <% } else { %>
+        <form action="/add" method="post">
+            <input type="text" name="empId" placeholder="Enter employee id" required>
+            <input type="text" name="name" placeholder="Enter employee name" required>
+            <input type="text" name="position" placeholder="Enter employee position" required>
+            <input type="number" name="salary" placeholder="Enter employee salary" required></input>
+            <button type="submit">Submit</button>
+        </form>
+    <% } %>
+
+    <a href="/" class="back-link">Back to Home</a>
+
+<%- include("partials/footer.ejs") %>
